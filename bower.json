@@ -1,0 +1,13 @@
+{
+  "name": "frate",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.3",
+    "fancybox": "~2.1.5",
+    "font-awesome": "~4.3.0",
+    "jquery.lazyload": "~1.9.3",
+    "slick-carousel": "~1.5.3",
+    "jquery-migrate": "~1.2.1",
+    "normalize.css": "~3.0.3"
+  }
+}
