@@ -1,25 +1,29 @@
-<? php
+<?php
 // deny direct access
-if(count(get_included_files()) ==1) exit("Direct access not permitted.");
+if(count(get_included_files()) == 1) {
+  http_response_code(400);
+  exit();
+}
 ?><!DOCTYPE html>
 <html lang="ja">
 <title>フラテ山の会 - トップ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="shortcut icon" href="/static/favicon.ico"></link>
-<link rel="stylesheet" href="/static/vendor/normalize.css/normalize.css" type="text/css" />
-<link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/static/vendor/fancybox/source/jquery.fancybox.css" type="text/css"/>
-<link rel="stylesheet" href="/static/vendor/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css"/>
-<link rel="stylesheet" href="/static/vendor/slick-carousel/slick/slick.css" type="text/css"/>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+<link rel="stylesheet" href="/static/css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="/static/css/jquery.fancybox.css" type="text/css"/>
+<link rel="stylesheet" href="/static/css/jquery.fancybox-buttons.css" type="text/css"/>
+<link rel="stylesheet" href="/static/css/slick.css" type="text/css"/>
 <link rel="stylesheet" href="/static/css/slick-theme.css" type="text/css"/>
 <link rel="stylesheet" href="/static/css/common.css" />
 
-<script src="/static/vendor/jquery/dist/jquery.min.js"></script>
-<script src="/static/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-<script src="/static/vendor/slick-carousel/slick/slick.min.js"></script>
-<script src="/static/vendor/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery-migrate.min.js"></script>
+<script src="/static/js/slick.min.js"></script>
+<script src="/static/js/jquery.fancybox.pack.js"></script>
 <script src="/static/js/common.js"></script>
+
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
