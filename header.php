@@ -8,8 +8,7 @@ if(count(get_included_files()) == 1) {
 <html lang="ja">
 <title>フラテ山の会 - トップ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<link rel="shortcut icon" href="/static/favicon.ico"></link>
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu" type="text/css">
+<link rel="shortcut icon" href="/favicon.ico"></link>
 <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
 <link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="/static/css/common.css" />
