@@ -38,8 +38,9 @@ h3 {
 }
 
 .box th {
-  white-space: nowrap;
   background-color: #eee;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 
 
