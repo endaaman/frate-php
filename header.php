@@ -9,20 +9,16 @@ if(count(get_included_files()) == 1) {
 <title>フラテ山の会 - トップ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <link rel="shortcut icon" href="/static/favicon.ico"></link>
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans" type="text/css">
-<link rel="stylesheet" href="/static/css/normalize.css" type="text/css" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu" type="text/css">
+<link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
+<!-- <link rel="stylesheet" href="/static/css/bootstrap&#45;theme.min.css" type="text/css" /> -->
 <link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css" />
-<link rel="stylesheet" href="/static/css/jquery.fancybox.css" type="text/css"/>
-<link rel="stylesheet" href="/static/css/jquery.fancybox-buttons.css" type="text/css"/>
-<link rel="stylesheet" href="/static/css/slick.css" type="text/css"/>
-<link rel="stylesheet" href="/static/css/slick-theme.css" type="text/css"/>
 <link rel="stylesheet" href="/static/css/common.css" />
 
-<script src="/static/js/jquery.min.js"></script>
-<script src="/static/js/jquery-migrate.min.js"></script>
-<script src="/static/js/slick.min.js"></script>
-<script src="/static/js/jquery.fancybox.pack.js"></script>
-<script src="/static/js/common.js"></script>
+<script src="/static/js/jquery-3.1.1.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/bg.js"></script>
+<script src="/static/js/menu.js"></script>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -35,24 +31,42 @@ if(count(get_included_files()) == 1) {
 
 <body>
 
+<!-- 背景 -->
 <div id="bg-container">
   <img id="bg-a" class="bg" style="opacity:1;" />
   <img id="bg-b" class="bg" style="opacity:1;" />
 </div>
 
-<nav id="g-nav">
-  <ul class="nav-list">
-    <li class="nav-menu">
-      <a class="link" href="/"><i class="fa fa-home"></i> ホーム</a>
-    </li>
-    <li class="nav-menu">
-      <a class="link" href="/member.php"><i class="fa fa-group"></i> 部員紹介</a>
-    </li>
-    <li class="nav-menu">
-      <a class="link" href="http://8208.teacup.com/frate/bbs"><i class="fa fa-external-link"></i> 掲示板</a>
-    </li>
-    <li class="nav-menu">
-      <a class="link" href="http://frate.bbs.fc2.com/"><i class="fa fa-lock"></i> 掲示板(パス付き)</a>
-    </li>
-  </ul>
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">フラテ山の会</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right js-menu-items">
+        <li data-active-regexp="^/$">
+          <a href="/"><i class="fa fa-home"></i>&nbsp;ホーム</a>
+        </li>
+        <li data-active-regexp="^/member.php">
+          <a href="/member.php"><i class="fa fa-group"></i>&nbsp;部員紹介</a>
+        </li>
+        <li>
+          <a href="http://www.yamareco.com/modules/yamareco/clubrecs-1171-listview.html"><i class="fa fa-archive"></i>&nbsp;ヤマレコ</a>
+        </li>
+        <li>
+          <a href="http://8208.teacup.com/frate/bbs"><i class="fa fa-pencil"></i>&nbsp;掲示板</a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-lock"></i>&nbsp;掲示板(パス付き)</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
+
