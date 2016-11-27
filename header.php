@@ -11,7 +11,6 @@ if(count(get_included_files()) == 1) {
 <link rel="shortcut icon" href="/static/favicon.ico"></link>
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu" type="text/css">
 <link rel="stylesheet" href="/static/css/bootstrap.min.css" type="text/css" />
-<!-- <link rel="stylesheet" href="/static/css/bootstrap&#45;theme.min.css" type="text/css" /> -->
 <link rel="stylesheet" href="/static/css/font-awesome.min.css" type="text/css" />
 <link rel="stylesheet" href="/static/css/common.css" />
 

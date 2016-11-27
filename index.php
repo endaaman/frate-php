@@ -1,6 +1,5 @@
 <?php require_once('./header.php') ?>
 
-<!-- メイン -->
 <div class="container">
   <div class="row box box-glass">
 

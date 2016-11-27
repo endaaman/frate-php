@@ -2,7 +2,8 @@
 
 <?php
 
-// 部員情報はの定義を編集する
+// 部員情報はこの定義を編集する
+// PHPに慣れてきたらDBに突っ込んだりするとよろし
 
 $memberList = [
   [
@@ -116,9 +117,10 @@ $memberList = [
     ]
   ]
 ]
+
+
+// 上記の定義に従って二重ループでHTMLを生成
 ?>
-
-
 <div class="container">
   <div class="row box box-glass">
     <div class="col-xs-12">
