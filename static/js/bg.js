@@ -1,6 +1,17 @@
 // 背景の画像をフェードさせながら切り替えている処理
 // 2012年頃書かれたもので覚えてないのでコメントによる解説なし。がんばれ
 
+
+// ↓を編集すれば表示する画像を変えられる
+var bg_files = [
+  '/static/img/hero/1.jpg',
+  '/static/img/hero/2.jpg',
+  '/static/img/hero/3.jpg',
+  '/static/img/hero/4.jpg',
+  '/static/img/hero/5.jpg'
+]
+
+
 $(function() {
   $.ajax({
   type: 'POST',
@@ -14,14 +25,6 @@ $(function() {
   bg_flip()
   update_bg()
 })
-
-var bg_files = [
-  '/static/img/hero/1.jpg',
-  '/static/img/hero/2.jpg',
-  '/static/img/hero/3.jpg',
-  '/static/img/hero/4.jpg',
-  '/static/img/hero/5.jpg'
-]
 
 var bg_fade_duration = 2000
 var bg_fade_interval = 10000
