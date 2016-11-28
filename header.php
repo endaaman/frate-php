@@ -17,6 +17,7 @@ if(count(get_included_files()) == 1) {
 <script src="/static/js/bootstrap.min.js"></script>
 <script src="/static/js/bg.js"></script>
 <script src="/static/js/menu.js"></script>
+<script src="/static/js/mail.js"></script>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

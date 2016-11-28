@@ -12,20 +12,6 @@ var bg_files = [
 ]
 
 
-$(function() {
-  $.ajax({
-  type: 'POST',
-    url: '/mail.php',
-  }).done(function( t ) {
-    $('.mail-text').text(t).attr('href', 'mailto:' + t)
-  }).fail(function(jqXHR, textStatus, errorThrown){
-    alert(errorThrown)
-  })
-
-  bg_flip()
-  update_bg()
-})
-
 var bg_fade_duration = 2000
 var bg_fade_interval = 10000
 
@@ -38,6 +24,12 @@ var bg_index = Math.floor( Math.random() * 5 )
 var bg_flip_index = false
 var bg_front
 var bg_back
+
+
+$(function() {
+  bg_flip()
+  update_bg()
+})
 
 function bg_file(){
   return bg_files[bg_index]
