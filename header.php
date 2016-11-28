@@ -61,7 +61,7 @@ if(count(get_included_files()) == 1) {
           <a href="http://8208.teacup.com/frate/bbs"><i class="fa fa-pencil"></i>&nbsp;掲示板</a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-lock"></i>&nbsp;掲示板(パス付き)</a>
+          <a href="http://frate.bbs.fc2.com/"><i class="fa fa-lock"></i>&nbsp;掲示板(パス付き)</a>
         </li>
       </ul>
     </div>
